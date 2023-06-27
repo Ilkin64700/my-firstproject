@@ -1,0 +1,33 @@
+.navbarsection {
+  margin-bottom: 5rem;
+  .container {
+    .allogo-button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid blue;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 2rem;
+      .logo {
+        img {
+        }
+      }
+      .navbutton {
+        .addbutton {
+          background-color: lightgreen;
+          padding: 10px 20px;
+          border-radius: 10px;
+          font-weight: 600;
+          font-size: 20px;
+          border: none;
+          transition: all .3s;
+          &:hover{
+            background-color: black;
+            color: white;
+          }       
+        }
+      }
+    }
+  }
+}

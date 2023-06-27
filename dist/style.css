@@ -1,0 +1,226 @@
+.navbarsection {
+  margin-bottom: 5rem;
+}
+.navbarsection .container .allogo-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid blue;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+.navbarsection .container .allogo-button .navbutton .addbutton {
+  background-color: lightgreen;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  transition: all 0.3s;
+}
+.navbarsection .container .allogo-button .navbutton .addbutton:hover {
+  background-color: black;
+  color: white;
+}
+
+.addmodal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding-top: 6rem;
+}
+.addmodal-overlay .addmodal {
+  border: 1px solid green;
+  border-radius: 5px;
+  width: 30%;
+  margin: 0 auto;
+  transition: all 0.3s;
+  animation: modalanimation 0.7s ease-out forwards;
+}
+.addmodal-overlay .addmodal .modalheader {
+  padding: 15px 0 0 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: darkgray;
+  border: 5px solid darkgray;
+  border-radius: 5px;
+}
+.addmodal-overlay .addmodal .modalheader .modalicon .closeicon {
+  margin-right: 15px;
+  font-size: 35px;
+  cursor: pointer;
+}
+.addmodal-overlay .addmodal .formcontent {
+  padding-left: 15px;
+}
+.addmodal-overlay .addmodal .formcontent label {
+  display: block;
+  padding: 15px 0 5px 0;
+  color: white;
+}
+.addmodal-overlay .addmodal .formcontent input {
+  border: 1px solid cornflowerblue;
+  border-radius: 5px;
+  width: 90%;
+  padding: 5px 0;
+}
+.addmodal-overlay .addmodal .formcontent input:focus {
+  outline: 0;
+}
+.addmodal-overlay .addmodal .formcontent .savebutton {
+  display: block;
+  margin: 25px 0;
+  width: 90%;
+  color: white;
+  border: none;
+  background-color: slateblue;
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.addmodal-overlay .addmodal .formcontent .savebutton:hover {
+  background-color: black;
+  color: aqua;
+}
+
+@keyframes modalanimation {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@media (max-width: 1400px) {
+  .clubinfo .container {
+    max-width: 1400px;
+  }
+}
+.clubinfo .container .clubinfo-list {
+  display: flex;
+}
+@media (max-width: 992px) {
+  .clubinfo .container .clubinfo-list {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .clubinfo .container .clubinfo-list {
+    flex-direction: column;
+  }
+}
+.clubinfo .container .clubinfo-list .clubinfo-item {
+  width: 25%;
+  margin-right: 40px;
+  border: 1px solid green;
+  padding: 10px;
+  border-radius: 5px;
+  height: 100%;
+}
+@media (max-width: 1400px) {
+  .clubinfo .container .clubinfo-list .clubinfo-item {
+    width: 22%;
+    margin-right: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .clubinfo .container .clubinfo-list .clubinfo-item {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .clubinfo .container .clubinfo-list .clubinfo-item {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+.clubinfo .container .clubinfo-list .clubinfo-item .clubinfo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.clubinfo .container .clubinfo-list .clubinfo-item .clubinfo-header .clubinfo-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.clubinfo .container .clubinfo-list .clubinfo-item .clubinfo-header .clubinfo-logo img {
+  width: 50px;
+  height: 50px;
+}
+@media (max-width: 1200px) {
+  .clubinfo .container .clubinfo-list .clubinfo-item .clubinfo-header .clubinfo-logo img {
+    width: 30px;
+    height: 30px;
+  }
+}
+.clubinfo .container .clubinfo-list .clubinfo-item .clubinfo-header .clubinfo-logo .clubinfo-title {
+  padding-left: 5px;
+}
+@media (max-width: 1200px) {
+  .clubinfo .container .clubinfo-list .clubinfo-item .clubinfo-header .clubinfo-logo .clubinfo-title {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1400px) {
+  .clubinfo .container .clubinfo-list .clubinfo-item .clubinfo-icons {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+}
+.clubinfo .container .clubinfo-list .clubinfo-item .clubinfo-icons .icondelete {
+  color: red;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.clubinfo .container .clubinfo-list .clubinfo-item .clubinfo-icons .iconinfo {
+  color: green;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.clubinfo .container .clubinfo-list .clubinfo-item .clubinfo-icons .icons-updowns {
+  display: inline-block;
+}
+.clubinfo .container .clubinfo-list .clubinfo-item .clubinfo-icons .icons-updowns .icondropupdown {
+  color: gray;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.clubinfo .container .clubinfo-list .clubinfo-item .clubinfo-description {
+  font-size: 14px;
+}
+.clubinfo .container .clubinfo-list .clubinfo-item .clubinfo-description .itemdescription {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  animation: clubinfoanimation 0.5s ease-out forwards;
+  transition: all 0.5s;
+}
+.clubinfo .container .clubinfo-list .clubinfo-item .clubinfo-description .itemdescription .showslicedtext {
+  padding-left: 10px;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@keyframes clubinfoanimation {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */

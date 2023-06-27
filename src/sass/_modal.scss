@@ -1,0 +1,75 @@
+.addmodal-overlay {
+  position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-top: 6rem;
+  .addmodal {
+    background: rgba(0,0,0,0.8);
+    border: 1px solid green;
+    border-radius: 5px;
+    width: 30%;
+    margin: 0 auto;
+    transition: all 0.3s;
+    animation: modalanimation 0.7s ease-out forwards;
+    .modalheader {
+      padding: 15px 0 0 15px;
+      display: flex;
+      justify-content: space-between;
+      background-color: darkgray;
+      border: 5px solid darkgray;
+      border-radius: 5px;
+      .modalicon {
+        .closeicon {
+          margin-right: 15px;
+          font-size: 35px;
+          cursor: pointer;
+        }
+      }
+    }
+    .formcontent {
+      padding-left: 15px;
+      label {
+        display: block;
+        padding: 15px 0 5px 0;
+        color: white;
+      }
+      input {
+        border: 1px solid cornflowerblue;
+        border-radius: 5px;
+        width: 90%;
+        padding: 5px 0;
+        &:focus {
+          outline: 0;
+        }
+      }
+
+      .savebutton {
+        display: block;
+        margin: 25px 0;
+        width: 90%;
+        color: white;
+        border: none;
+        background-color: slateblue;
+        padding: 15px;
+        border-radius: 10px;
+        transition: all 0.3s;
+        &:hover {
+          background-color: black;
+          color: aqua;
+        }
+      }
+    }
+  }
+}
+@keyframes modalanimation {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
